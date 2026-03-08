@@ -16,6 +16,10 @@ export const getDiet = () => API.get('/diet');
 export const addDiet = (data) => API.post('/diet', data);
 export const updateDiet = (id, data) => API.put(`/diet/${id}`, data);
 
+// AI Diet
+export const generateAiDiet = (data) => API.post('/ai-diet-adjust', data);
+export const getAiDietSession = () => API.get('/ai-diet-adjust');
+
 // Workouts
 export const getWorkouts = () => API.get('/workouts');
 export const addWorkout = (data) => API.post('/workouts', data);

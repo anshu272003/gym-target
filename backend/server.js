@@ -27,6 +27,7 @@ app.use(express.json());
 app.use('/api/progress', require('./routes/progressRoutes'));
 app.use('/api/diet', require('./routes/dietRoutes'));
 app.use('/api/workouts', require('./routes/workoutRoutes'));
+app.use('/api/ai-diet-adjust', require('./routes/aiDietRoutes'));
 
 // Health check
 app.get('/api/health', (req, res) => {
